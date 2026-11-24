@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Synaptica | Estrutura própria para executivos e profissionais autônomos</title>
+<meta name="description" content="Tráfego pago como alavanca, LTV acima do CAC e IA no WhatsApp conduzindo a triagem, inclusive fora do horário comercial. Para executivos e profissionais autônomos de alto nível.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfaf6;--card:#ffffff;--ink:#111111;--mut:#3b3b3b;--line:#cfc9bb;--ac:#0a5a44;--btn:#0b0b0b;--btnt:#ffffff;--fs:21px;color-scheme:light dark;
+--d:'Playfair Display',Georgia,'Times New Roman',serif;--s:'Montserrat','Segoe UI',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e0c;--card:#151513;--ink:#f6f3ea;--mut:#d3cec0;--line:#3d3d37;--ac:#6fe0b4;--btn:#f6f3ea;--btnt:#0e0e0c}}
+:root[data-theme="dark"]{--bg:#0e0e0c;--card:#151513;--ink:#f6f3ea;--mut:#d3cec0;--line:#3d3d37;--ac:#6fe0b4;--btn:#f6f3ea;--btnt:#0e0e0c}
+:root.hc{--bg:#ffffff;--card:#ffffff;--ink:#000000;--mut:#000000;--line:#000000;--ac:#00402f;--btn:#000000;--btnt:#ffffff}
+@media (prefers-color-scheme:dark){:root.hc:not([data-theme="light"]){--bg:#000000;--card:#000000;--ink:#ffffff;--mut:#ffffff;--line:#ffffff;--ac:#7dffc8;--btn:#ffffff;--btnt:#000000}}
+*{box-sizing:border-box}html{font-size:var(--fs);-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--s);font-size:1rem;font-weight:400;line-height:1.8;letter-spacing:.03em;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,ul{margin:0}a{color:inherit}:focus-visible{outline:3px solid var(--ac);outline-offset:4px}::selection{background:var(--ac);color:var(--bg)}
+.w{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem;padding-top:1.4rem;padding-bottom:1.4rem}
+.brand{font-weight:600;font-size:.95rem;letter-spacing:.34em;text-transform:uppercase}
+.tools{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+.tools span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-right:.25rem}
+.tools button{font:500 .85rem var(--s);letter-spacing:.06em;min-width:2.9rem;min-height:2.9rem;padding:0 .8rem;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;border-radius:.3rem}
+.tools button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.hero{padding:clamp(4rem,11vw,8rem) 0 clamp(3.5rem,8vw,6rem)}
+.eb{font-size:.78rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ac);margin-bottom:1.6rem;line-height:1.7}
+h1{font-family:var(--d);font-weight:500;font-size:clamp(2.05rem,5.4vw,3.3rem);line-height:1.2;letter-spacing:.015em;max-width:20ch}
+.rule{width:3.5rem;height:3px;background:var(--ac);margin:2.2rem 0}
+.lead{max-width:34rem;color:var(--mut);margin-bottom:2.6rem}
+.btn{display:inline-block;background:var(--btn);color:var(--btnt);text-decoration:none;font-weight:600;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;padding:1.15rem 1.9rem;border-radius:.3rem;border:2px solid var(--btn);text-align:center;transition:background .25s,color .25s}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn.o{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.o:hover{background:var(--ink);color:var(--bg)}
+section.s{padding:clamp(3.5rem,8vw,6.5rem) 0;border-top:1px solid var(--line)}
+h2{font-family:var(--d);font-weight:500;font-size:clamp(1.65rem,3.8vw,2.3rem);line-height:1.3;letter-spacing:.015em;max-width:24ch}
+.intro{max-width:36rem;color:var(--mut);margin-top:1.4rem}
+.grid{display:grid;gap:1.6rem;margin-top:3rem;grid-template-columns:repeat(auto-fit,minmax(min(16.5rem,100%),1fr))}
+.c{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--ac);border-radius:.3rem;padding:2rem 1.7rem}
+.n{font-family:var(--d);font-size:1.45rem;color:var(--ac);margin-bottom:.9rem;letter-spacing:.06em}
+h3{font-family:var(--d);font-weight:500;font-size:1.3rem;line-height:1.35;letter-spacing:.015em;margin-bottom:.8rem}
+.c p{color:var(--mut)}
+.two{display:grid;gap:3rem;margin-top:3rem;grid-template-columns:repeat(auto-fit,minmax(min(18rem,100%),1fr))}
+.two h3{padding-bottom:.9rem;border-bottom:1px solid var(--line);margin-bottom:1.2rem}
+.two ul{list-style:none;padding:0}.two li{padding:.55rem 0 .55rem 1.5rem;position:relative;color:var(--mut)}
+.two li::before{content:"";position:absolute;left:0;top:1.35rem;width:.55rem;height:.55rem;background:var(--ac)}
+.cta{text-align:center;padding-bottom:clamp(4.5rem,9vw,7rem)}
+.cta h2,.cta .intro{margin-left:auto;margin-right:auto}
+.cta .row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2.6rem}
+.tel{margin-top:2.2rem;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.note{margin-top:1.6rem;font-size:.85rem;color:var(--mut);letter-spacing:.04em}
+footer{border-top:1px solid var(--line);padding:2.4rem 0;font-size:.85rem;color:var(--mut);letter-spacing:.08em}
+footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem 2rem}
+footer .priv{flex-basis:100%;font-size:.8rem;letter-spacing:.04em}
+.cb{position:fixed;left:1rem;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));max-width:40rem;margin:0 auto;background:#0a0a0a;color:#f6f3ea;border:1px solid #f6f3ea;padding:1.2rem 1.4rem;z-index:55;font-size:.88rem;line-height:1.6;border-radius:.3rem;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.cb[hidden]{display:none}
+.cb div{display:flex;gap:.8rem;margin-top:1rem;flex-wrap:wrap}
+.cb button{font:600 .82rem var(--s);letter-spacing:.1em;text-transform:uppercase;padding:.8rem 1.25rem;border:2px solid #f6f3ea;background:#f6f3ea;color:#0a0a0a;border-radius:.3rem;cursor:pointer;min-height:2.8rem}
+.cb .n{background:transparent;color:#f6f3ea}
+@media(max-width:560px){.btn{width:100%}.cta .row{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="w bar">
+  <div class="brand">Synaptica</div>
+  <div class="tools" role="group" aria-label="Acessibilidade de leitura">
+    <span>Texto</span>
+    <button type="button" data-fs="21" aria-pressed="true" aria-label="Texto normal">A</button>
+    <button type="button" data-fs="24" aria-pressed="false" aria-label="Texto grande">A+</button>
+    <button type="button" data-fs="27" aria-pressed="false" aria-label="Texto muito grande">A++</button>
+    <button type="button" id="hc" aria-pressed="false">Contraste</button>
+  </div>
+</div></header>
+
+<main>
+<section class="hero" data-sec="abertura"><div class="w">
+  <p class="eb">Para executivos e profissionais autônomos de alto nível</p>
+  <h1>Estrutura própria para quem decide, lidera e atende no mais alto nível.</h1>
+  <div class="rule"></div>
+  <p class="lead">A Synaptica organiza a casa para o tráfego pago trazer clientes qualificados e para a inteligência artificial no WhatsApp conduzir a triagem, mesmo fora do horário comercial.</p>
+  <a class="btn" data-ev="hero" href="#diagnostico">Solicitar diagnóstico prático</a>
+</div></section>
+
+<section class="s" data-sec="tese"><div class="w">
+  <p class="eb">A tese</p>
+  <h2>Tráfego pago é alavanca, não muleta.</h2>
+  <p class="intro">Anúncio novo apenas para empatar o caixa mantém a operação refém. A consolidação acontece quando o valor de cada cliente (LTV) supera o custo de conquistá-lo (CAC).</p>
+  <div class="grid">
+    <div class="c"><div class="n">01</div><h3>Alavanca de crescimento</h3><p>O tráfego atua sobre uma base organizada, com dados limpos e origem rastreada, em vez de compensar demora e contato perdido.</p></div>
+    <div class="c"><div class="n">02</div><h3>LTV acima do CAC</h3><p>Acompanhamento em ciclos de 7, 10 ou 15 dias, com oferta complementar e upgrade, aumenta o valor de cada cliente.</p></div>
+    <div class="c"><div class="n">03</div><h3>Cobertura além do 5x2</h3><p>O contato que chega à noite, no feriado ou no fim de semana é acolhido na hora, sem esfriar.</p></div>
+  </div>
+</div></section>
+
+<section class="s" data-sec="pilares"><div class="w">
+  <p class="eb">Os três pilares</p>
+  <h2>Cada camada sustenta a seguinte.</h2>
+  <div class="grid">
+    <div class="c"><div class="n">P1</div><h3>Tráfego direcionado e dados limpos</h3><p>Anúncios, Google Meu Negócio e Meta calibrados para alcançar decisores e clientes de alto valor, com a origem de cada contato registrada.</p></div>
+    <div class="c"><div class="n">P2</div><h3>Rotas rastreadas até o WhatsApp</h3><p>O contato chega com origem, campanha e intenção definidos. Nada cai solto nem se perde no volume de mensagens.</p></div>
+    <div class="c"><div class="n">P3</div><h3>Triagem e acompanhamento com IA</h3><p>Conduz a triagem inicial, o agendamento e os retornos periódicos, e entrega um mapa claro para o fechamento humano.</p></div>
+  </div>
+</div></section>
+
+<section class="s" data-sec="trilhas"><div class="w">
+  <p class="eb">Para quem</p>
+  <h2>Duas trilhas, conforme a sua posição.</h2>
+  <div class="grid">
+    <div class="c"><h3>Profissional autônomo e líder de squad</h3><p>Autoridade própria, clientes qualificados e formação de squad com menor custo, com triagem antes de cada deslocamento ou reunião.</p></div>
+    <div class="c"><h3>Executivo e liderança</h3><p>Diagnóstico de vazamentos no funil e de demanda parada fora do 5x2, com melhoria tangível que amplia a influência interna.</p></div>
+  </div>
+</div></section>
+
+<section class="s" data-sec="limites"><div class="w">
+  <p class="eb">Limites claros</p>
+  <h2>A tecnologia organiza. A decisão continua humana.</h2>
+  <div class="two">
+    <div><h3>A Synaptica entrega</h3><ul>
+      <li>Base preparada para tráfego direcionado</li>
+      <li>Posse e rastreamento dos dados</li>
+      <li>Triagem e acompanhamento no WhatsApp</li>
+      <li>Mapa de oportunidades para o fechamento</li></ul></div>
+    <div><h3>Fica com você</h3><ul>
+      <li>Negociação e fechamento</li>
+      <li>Execução do serviço ou da entrega</li>
+      <li>Estoque e decisões de gestão</li>
+      <li>Atendimento humano após a triagem</li></ul></div>
+  </div>
+</div></section>
+
+<section id="diagnostico" class="s cta"><div class="w">
+  <p class="eb">Próximo passo</p>
+  <h2>Vamos entender a sua operação.</h2>
+  <p class="intro">Escolha a sua trilha e abra a conversa no WhatsApp. A mensagem já segue com a origem do seu acesso.</p>
+  <div class="row">
+    <a class="btn" data-rota="squad_pj" data-quem="profissional autônomo ou líder de squad" href="https://wa.me/5569981087781" target="_blank" rel="noopener noreferrer">Sou profissional autônomo</a>
+    <a class="btn o" data-rota="executivo_caixa" data-quem="executivo ou liderança" href="https://wa.me/5569981087781" target="_blank" rel="noopener noreferrer">Sou executivo</a>
+  </div>
+  <p class="tel">WhatsApp (69) 98108-7781 · 69981087781</p>
+  <p class="note">Os resultados dependem de cada operação e não são garantidos.</p>
+</div></section>
+</main>
+
+<footer><div class="w"><span>&copy; 2027 Synaptica</span><span>Dados limpos. LTV acima do CAC. Decisão humana.</span><span class="priv">Capturamos parâmetros de origem (UTMs) e métricas de navegação conforme seu aceite para qualificar o atendimento e melhorar esta página.</span></div></footer>
+
+<div class="cb" id="cb" role="dialog" aria-label="Aceite de captura e rastreio" hidden>
+  <span>Ao aceitar, você autoriza o rastreio de origem (UTMs), cliques e leitura da página para medir campanhas e preparar o contexto do seu atendimento.</span>
+  <div>
+    <button type="button" id="cb-yes">Aceitar captura</button>
+    <button type="button" class="n" id="cb-no">Apenas essencial</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var R=document.documentElement,S=function(k,v){try{localStorage.setItem(k,v)}catch(e){}},G=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+  function size(px){R.style.setProperty('--fs',px+'px');document.querySelectorAll('[data-fs]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.fs==px?'true':'false')})}
+  document.querySelectorAll('[data-fs]').forEach(function(b){b.addEventListener('click',function(){size(b.dataset.fs);S('sy_fs',b.dataset.fs)})});
+  var hc=document.getElementById('hc');
+  function contrast(on){R.classList.toggle('hc',on);hc.setAttribute('aria-pressed',on?'true':'false')}
+  hc.addEventListener('click',function(){var on=!R.classList.contains('hc');contrast(on);S('sy_hc',on?'1':'0')});
+  var fs=G('sy_fs');if(fs)size(fs);if(G('sy_hc')==='1')contrast(true);
+
+  // ===== CAPTURA DE UTMs + ACEITE + RASTREIO =====
+  // Preencha para enviar os dados. Vazio = nada externo sai do navegador (UTMs ainda seguem na mensagem do WhatsApp).
+  var T={ga4:'',metaPixel:'',gtm:'',endpoint:''}; // endpoint: webhook seu (n8n, Make, Apps Script). ga4: G-XXXXXXX
+  var WA_NUMBER='5569981087781';
+  var KEYS=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid','pos'];
+  var ss={g:function(k){try{return sessionStorage.getItem(k)}catch(e){return null}},s:function(k,v){try{sessionStorage.setItem(k,v)}catch(e){}}};
+  var qs=new URLSearchParams(location.search),U={};
+  try{U=JSON.parse(ss.g('sy_utm')||'{}')}catch(e){}
+  KEYS.forEach(function(k){var v=qs.get(k);if(v)U[k]=v.slice(0,100)});
+  ss.s('sy_utm',JSON.stringify(U));
+
+  var SID=ss.g('sy_sid');
+  if(!SID){
+    try{SID=Array.from(crypto.getRandomValues(new Uint8Array(3)),function(b){return('0'+b.toString(16)).slice(-2)}).join('').toUpperCase()}
+    catch(e){SID=String(Date.now()).slice(-6)}
+    ss.s('sy_sid',SID);
+  }
+
+  function genRef(){
+    try{return 'SY-'+Array.from(crypto.getRandomValues(new Uint8Array(2)),function(b){return('0'+b.toString(16)).slice(-2)}).join('').toUpperCase()}
+    catch(e){return 'SY-'+Math.random().toString(36).substring(2,6).toUpperCase()}
+  }
+
+  var ref='';try{ref=document.referrer?new URL(document.referrer).hostname:''}catch(e){}
+
+  function origem(){
+    var so=(U.utm_source||'').toLowerCase(),md=(U.utm_medium||'').toLowerCase(),all=(so+' '+md+' '+(U.utm_campaign||'')+' '+(U.utm_content||'')).toLowerCase();
+    if(!so){if(U.gclid)return 'Google Ads';if(U.fbclid)return 'Meta (anúncio)';return 'Acesso direto'}
+    if(/^(ig|instagram)$/.test(so))return 'Instagram';
+    if(/^(fb|facebook|face)$/.test(so))return 'Facebook';
+    if(/gmn|gbp|google[_ ]?business|meu[_ ]?neg|my[_ ]?business/.test(all)||(so==='google'&&md==='organic'))return 'Google Meu Negócio';
+    if(so==='meta'){if(/insta|\big\b|_ig|ig_/.test(all))return 'Instagram';if(/face|\bfb\b|_fb|fb_/.test(all))return 'Facebook';return 'Meta (Instagram ou Facebook)'}
+    if(so==='google')return 'Google Ads';
+    if(/whats|wa$/.test(so))return 'WhatsApp';
+    return so.charAt(0).toUpperCase()+so.slice(1);
+  }
+
+  var consentStatus=G('sy_consent')||'pendente'; // 'yes' | 'no' | 'pendente'
+  var LOG=[],maxPct=0,eng=0,seen=[],sent={},pixelsLoaded=false;
+  window.dataLayer=window.dataLayer||[];
+  if(T.ga4)window.gtag=function(){dataLayer.push(arguments)};
+  if(T.metaPixel&&!window.fbq){var n=window.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};n.push=n;n.loaded=true;n.version='2.0';n.queue=[]}
+
+  function canSendExternal(){
+    return consentStatus==='yes';
+  }
+
+  function send(ev,p,forceLocal){
+    var d={
+      ev:ev,
+      sid:SID,
+      ts:new Date().toISOString(),
+      path:location.pathname,
+      landing:ss.g('sy_land')||location.pathname,
+      ref:ss.g('sy_ref')||ref,
+      origem:origem(),
+      aceite:consentStatus
+    };
+    KEYS.forEach(function(k){if(U[k])d[k]=U[k]});
+    for(var k in (p||{}))d[k]=p[k];
+
+    if(canSendExternal()||forceLocal){
+      LOG.push(d);if(LOG.length>200)LOG.shift();
+    }
+    if(canSendExternal()){
+      dataLayer.push(Object.assign({event:ev},d));
+      if(window.gtag)gtag('event',ev,d);
+      if(window.fbq&&(ev==='clique_whatsapp'||ev==='clique_cta'||ev==='aceite_captura'))fbq('trackCustom',ev,d);
+      if(T.endpoint){
+        try{
+          var b=JSON.stringify(d);
+          if(navigator.sendBeacon)navigator.sendBeacon(T.endpoint,new Blob([b],{type:'text/plain;charset=UTF-8'}));
+          else fetch(T.endpoint,{method:'POST',body:b,keepalive:true,mode:'no-cors'});
+        }catch(e){}
+      }
+    }
+    panel();
+  }
+
+  function buildWhatsAppHref(a, refCode){
+    var og=origem();
+    var intro=(og==='Acesso direto'||og.indexOf('Site')===0)?'Vim pelo site da Synaptica':'Vim pelo '+og;
+    var quem=a.dataset.quem||'executivo ou profissional autônomo';
+    var rota=a.dataset.rota||'diagnostico';
+    var utmList=KEYS.filter(function(k){return U[k]}).map(function(k){return k+'='+U[k]});
+    utmList.push('aceite='+consentStatus);
+    var m='Olá! '+intro+' e sou '+quem+'. Quero um diagnóstico prático da minha operação.\n\n[ref: '+refCode+' | origem: '+og+' | rota: '+rota+' | sessao: '+SID+' | '+utmList.join(' | ')+']';
+    return 'https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(m);
+  }
+
+  function syncWhatsAppLinks(refMap){
+    document.querySelectorAll('[data-rota]').forEach(function(a,idx){
+      var key=a.dataset.rota+'_'+idx;
+      var code=(refMap&&refMap[key])||(a.dataset.refCode)||(a.dataset.refCode=genRef());
+      a.href=buildWhatsAppHref(a,code);
+    });
+  }
+
+  if(!ss.g('sy_land')){ss.s('sy_land',location.pathname);ss.s('sy_ref',ref)}
+  syncWhatsAppLinks();
+  send('visita',{tela:innerWidth<600?'celular':innerWidth<1000?'tablet':'desktop'},true);
+
+  var raf=0;addEventListener('scroll',function(){if(raf)return;raf=requestAnimationFrame(function(){raf=0;
+    var pct=Math.round((scrollY+innerHeight)/document.documentElement.scrollHeight*100);if(pct>maxPct)maxPct=pct;
+    [25,50,75,100].forEach(function(m){if(pct>=m&&!sent['r'+m]){sent['r'+m]=1;send('rolagem',{pct:m})}})})},{passive:true});
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var nm=e.target.dataset.sec||e.target.id;if(seen.indexOf(nm)<0){seen.push(nm);send('secao_vista',{secao:nm})}}})},{threshold:.4});
+    document.querySelectorAll('[data-sec],#diagnostico').forEach(function(el){io.observe(el)});
+  }
+
+  setInterval(function(){if(document.visibilityState==='visible'){eng++;if([15,30,60,120,240].indexOf(eng)>=0)send('tempo_ativo',{seg:eng});else panel()}},1000);
+
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('[data-rota],[data-ev],[data-fs],#hc');
+    if(!a)return;
+    if(a.dataset.rota){
+      var code=genRef();
+      a.dataset.refCode=code;
+      a.href=buildWhatsAppHref(a,code);
+      send('clique_whatsapp',{rota:a.dataset.rota,ref_code:code},true);
+    }else if(a.dataset.ev){
+      send('clique_cta',{cta:a.dataset.ev});
+    }else if(a.dataset.fs){
+      send('acessibilidade',{tipo:'texto',valor:a.dataset.fs});
+    }else{
+      send('acessibilidade',{tipo:'contraste'});
+    }
+  });
+
+  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')send('saida',{rolagem_max:maxPct,tempo_ativo:eng,secoes:seen.join(',')})});
+
+  function load(src){var x=document.createElement('script');x.async=true;x.src=src;document.head.appendChild(x)}
+  function pixels(){
+    if(pixelsLoaded)return;
+    pixelsLoaded=true;
+    if(T.gtm){dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});load('https://www.googletagmanager.com/gtm.js?id='+encodeURIComponent(T.gtm))}
+    if(T.ga4){gtag('js',new Date());gtag('config',T.ga4);load('https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(T.ga4))}
+    if(T.metaPixel){fbq('init',T.metaPixel);fbq('track','PageView');load('https://connect.facebook.net/en_US/fbevents.js')}
+  }
+
+  var cb=document.getElementById('cb'),btnYes=document.getElementById('cb-yes'),btnNo=document.getElementById('cb-no');
+  if(consentStatus==='yes'){pixels()}
+  else if(consentStatus==='pendente'&&cb){cb.hidden=false}
+
+  function applyConsent(choice){
+    consentStatus=choice;
+    S('sy_consent',choice);
+    if(cb)cb.hidden=true;
+    syncWhatsAppLinks();
+    if(choice==='yes'){
+      pixels();
+      send('aceite_captura',{decisao:'aceito'},true);
+    }else{
+      send('aceite_captura',{decisao:'recusado'},true);
+    }
+  }
+
+  if(btnYes)btnYes.addEventListener('click',function(){applyConsent('yes')});
+  if(btnNo)btnNo.addEventListener('click',function(){applyConsent('no')});
+
+  var dbg=qs.get('debug')==='1',box=null,pre=null;
+  function panel(){
+    if(!dbg)return;
+    if(!box){box=document.createElement('div');box.style.cssText='position:fixed;left:0;right:0;bottom:0;max-height:46vh;overflow:auto;background:#000;color:#fff;font:14px/1.6 ui-monospace,Menlo,Consolas,monospace;letter-spacing:0;padding:12px 16px;z-index:60;border-top:2px solid #6fe0b4';
+      pre=document.createElement('pre');pre.style.cssText='margin:0;white-space:pre-wrap;word-break:break-word;font:inherit';
+      var cp=document.createElement('button');cp.textContent='Copiar dados (JSON)';cp.style.cssText='margin-bottom:8px;padding:8px 12px;font:600 13px var(--s);cursor:pointer';
+      cp.onclick=function(){var j=JSON.stringify({sid:SID,aceite:consentStatus,utm:U,rolagem_max:maxPct,tempo_ativo:eng,secoes:seen,eventos:LOG},null,2);try{navigator.clipboard.writeText(j);cp.textContent='Copiado'}catch(e){cp.textContent='Não foi possível copiar'}};
+      box.appendChild(cp);box.appendChild(pre);document.body.appendChild(box)}
+    var L=['SESSÃO '+SID+'   ACEITE '+consentStatus+'   ORIGEM '+origem()+'   rolagem '+maxPct+'%   tempo ativo '+eng+'s','seções vistas: '+(seen.join(', ')||'—'),''];
+    KEYS.forEach(function(k){if(k.indexOf('utm_')===0||U[k])L.push(k+': '+(U[k]||'—'))});
+    L.push('','últimos eventos:');LOG.slice(-6).reverse().forEach(function(e){L.push(e.ts.slice(11,19)+'  '+e.ev+(e.pct?' '+e.pct+'%':'')+(e.secao?' '+e.secao:'')+(e.rota?' '+e.rota:'')+(e.cta?' '+e.cta:'')+(e.ref_code?' ['+e.ref_code+']':''))});
+    pre.textContent=L.join('\n');
+  }
+  panel();
+})();
+</script>
+</body>
+</html>
